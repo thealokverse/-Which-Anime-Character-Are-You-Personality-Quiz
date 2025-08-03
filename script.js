@@ -1,4 +1,3 @@
-// Character database with 25 anime characters
 const characters = {
     naruto: { name: "Naruto Uzumaki", quote: "I'm not gonna run away, I never go back on my word! That's my nindō: my ninja way!", img: "img/naruto.jpg" },
     luffy: { name: "Monkey D. Luffy", quote: "I'm gonna be the Pirate King!", img: "img/luffy.jpg" },
