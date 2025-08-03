@@ -16,10 +16,10 @@ A fun and interactive web-based quiz app that tells you which anime character be
 
 - HTML, CSS, JavaScript
 - Tailwind CSS (for styling)
-- Deployed via GitHub Pages or Vercel/Netlify
+- Deployed via GitHub Pages and Vercel
 
 ## 👀 Live Here
-
+anime-personality-quiz.vercel.app
 
 ## ⚡ Creator
 Made with ❤️ by Alok Singh
