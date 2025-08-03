@@ -604,28 +604,6 @@ function finishQuiz() {
     }, 2000);
 }
 
-// Submit Gmail
-function submitGmail() {
-    const gmail = document.getElementById('gmailInput').value;
-    if (!gmail || !gmail.includes('@gmail.com')) {
-        alert('Please enter a valid Gmail address!');
-        return;
-    }
-    
-    // Store Gmail (in real app, you'd send this to your backend)
-    localStorage.setItem('userGmail', gmail);
-    
-    // Hide modal and show loading
-    document.getElementById('gmailModal').style.display = 'none';
-    document.getElementById('quizScreen').style.display = 'none';
-    document.getElementById('loadingScreen').style.display = 'block';
-    
-    // Show result after 2 seconds
-    setTimeout(() => {
-        showResult();
-    }, 2000);
-}
-
 // Show result
 function showResult() {
     // Find character with highest score
@@ -737,19 +715,4 @@ function retakeQuiz() {
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
     updateAttemptCounter();
-});
-
-// Close modal when clicking outside
-window.onclick = function(event) {
-    const modal = document.getElementById('gmailModal');
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
-}
-
-// Enter key support for Gmail input
-document.getElementById('gmailInput').addEventListener('keypress', function(e) {
-    if (e.key === 'Enter') {
-        submitGmail();
-    }
 });
