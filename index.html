@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Personality Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="attempts-counter">
+        Attempts: <span id="attemptCount">0</span>
+    </div>
+
+    <div class="container">
+        <h1 class="title"> ANIME PERSONALITY QUIZ </h1>
+        
+        <!-- Start Screen -->
+        <div id="startScreen" class="start-screen">
+            <div class="quiz-card">
+                <p class="start-description">
+                    Discover which legendary anime character matches your personality! 
+                    Answer 7 random questions and find your anime twin from iconic characters.
+                    Ready to unleash your inner anime spirit?
+                </p>
+                <button class="btn" onclick="startQuiz()">🚀 START QUIZ</button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quizScreen" class="quiz-screen">
+            <div class="quiz-card">
+                <div class="question-counter">
+                    Question <span id="currentQ">1</span> of 7
+                </div>
+                <div class="question" id="questionText"></div>
+                <div class="options" id="optionsContainer"></div>
+                <button class="btn" id="nextBtn" onclick="nextQuestion()" disabled>NEXT ⚡</button>
+            </div>
+        </div>
+
+        <!-- Loading Screen -->
+        <div id="loadingScreen" class="loading">
+            <div class="quiz-card">
+                <div class="spinner"></div>
+                <h2>Calculating your anime destiny...</h2>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="resultScreen" class="result-screen">
+            <div class="quiz-card">
+                <img id="characterImg" class="character-image" src="" alt="">
+                <h2 id="characterName" class="character-name"></h2>
+                <p id="characterQuote" class="character-quote"></p>
+                
+                <div class="share-buttons">
+                    <a href="#" class="share-btn" onclick="shareOnTwitter()">📱 Twitter</a>
+                    <a href="#" class="share-btn" onclick="shareOnWhatsApp()">💬 WhatsApp</a>
+                    <a href="#" class="share-btn" onclick="shareOnFacebook()">📘 Facebook</a>
+                    <a href="#" class="share-btn" onclick="shareOnInstagram()">📷 Instagram</a>
+                    <button class="share-btn" onclick="copyLink()">🔗 Copy Link</button>
+                </div>
+                
+                <button class="btn" onclick="retakeQuiz()">🔄 RETAKE QUIZ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
