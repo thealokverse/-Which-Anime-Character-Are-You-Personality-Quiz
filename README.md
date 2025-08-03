@@ -19,8 +19,9 @@ A fun and interactive web-based quiz app that tells you which anime character be
 - Deployed via GitHub Pages and Vercel
 
 ## 👀 Live Here
-anime-personality-quiz.vercel.app
+(https://anime-personality-quiz.vercel.app)
+(https://thealokverse.github.io/-Which-Anime-Character-Are-You-Personality-Quiz/)
 
 ## ⚡ Creator
 Made with ❤️ by Alok Singh
-🔗 X/Twitter: @thealokverse
+🔗 X/Twitter: @thealokverse (https://x.com/thealokverse)
